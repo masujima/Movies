@@ -13,7 +13,7 @@ struct Popular: Codable {
     let totalPages: Int
     let totalResults: Int
     
-    enum Popular: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case page
         case results
         case totalPages = "total_pages"
